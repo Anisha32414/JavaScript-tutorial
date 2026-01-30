@@ -37,3 +37,33 @@ const func3=() => {
     console.log(this)           // print {}
 }
 func3()
+
+
+//************************************************************************************************************
+
+// implicit and explicit way of using arrow function:-
+
+//1-explicit   --->  in this we have to use {} and return keyword
+
+const sum_func1=(num1,num2) => {
+    return num1+num2
+}
+const ans1=sum_func1(2,3)
+console.log(ans1)
+
+//2-implicit    --->  in this we do not use any return keyword and {} (output remains same)
+
+const sum_func2=(num1,num2) => (num1+num2)
+
+console.log(sum_func2(2,3))
+
+/*
+
+#print object using arrow function...
+
+const arrow_func=() => ({ name: "anisha",branch:"AI"})
+console.log(arrow_func())
+
+---> object should be indide () otherwise it print "undefined"
+
+*/
